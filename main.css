@@ -1,0 +1,33 @@
+header {
+  width: 100vw;
+  height: 150px;
+  background: lightgoldenrodyellow;
+}
+
+body {
+  margin: 0;
+  background: darkcyan;
+}
+
+/* STYLES FOR SEARCH BAR */
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <span>BAR TOOLS</span>
+      </div>
+      <div class="search-wrapper">
+        <label for="search">Search Users</label>
+        <input type="search" id="search" data-search>
+      </div>
+    </header>
+    
+    <div class="user-cards" data-user-cards-container>
+    </div>
+
+    <template data-user-template>
+      <div class="product-card">
+        <div class="card-part part-one">
+          <div class="card-title card-home-title">
+            <span card-title></span>
+          </div>
+          <div class="image-container" card-image>
+            
+          </div>
+          <div class="card-desc" card-desc>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          </div>
+          <button class="change-part-btn card-button" data-target="part-two">
+            Ingredients
+          </button>
+        </div>
+        <div class="card-part part-two hidden">
+          <div class="card-title">
+            <span>Glassware</span>
+          </div>
+          <div class="card-content">
+            <span>Highball</span>
+          </div>
+          <div class="card-title">
+            <span>Ingredients</span>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>2 oz tequila</li>
+              <li>1 oz lime juice</li>
+              <li>1 oz triple sec</li>
+              <li>Salt for rimming</li>
+              <li>Ice</li>
+            </ul>
+          </div>
+          <button class="change-part-btn card-button" data-target="part-three">
+            Preparation
+          </button>
+        </div>
+        <div class="card-part part-three hidden">
+          <div class="card-title">
+            <span>Method</span>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Rim the edge of a glass with salt.</li>
+              <li>
+                In a shaker, combine the tequila, lime juice, triple sec, and ice.
+              </li>
+              <li>Shake well and strain into the glass.</li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <span>Garnish</span>
+          </div>
+          <div class="card-content">
+            <span>Lime Wheel & Salt Rim</span>
+          </div>
+          <button class="change-part-btn card-button" data-target="part-one">
+            Back
+          </button>
+        </div>
+        <script src="js/cardfade.js"></script>
+      </div>
+    </template>
+
+  </body>
+</html>
